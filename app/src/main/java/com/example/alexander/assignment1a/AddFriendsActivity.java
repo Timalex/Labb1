@@ -48,7 +48,7 @@ public class AddFriendsActivity extends SharedMenuActivity {
             showCenterToast(getString(R.string.toast_missing_name));
             nameTv.requestFocus();
         } // Meddela om en adress är inmatad och inte matchar mot ett e-postmönster
-        else if (!(email.trim().equals("") && Patterns.EMAIL_ADDRESS.matcher(email).matches()))
+        else if (!(email.trim().equals("")) && !(Patterns.EMAIL_ADDRESS.matcher(email).matches()))
         {
             showCenterToast(getString(R.string.toast_invalid_email));
             emailTv.requestFocus();
