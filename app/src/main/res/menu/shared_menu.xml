@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.alexander.assignment1a.SharedMenuActivity" >
+    <item android:id="@+id/menu_activity_contact"
+        android:title="@string/app_name" />
+    <item android:id="@+id/menu_activity_background"
+        android:title="@string/title_activity_background_color" />
+    <item android:id="@+id/menu_activity_random"
+        android:title="@string/title_activity_random_number" />
+</menu>
