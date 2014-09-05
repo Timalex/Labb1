@@ -9,13 +9,14 @@
     <string name="title_activity_random_number">Slumpade Tal</string>
     <string name="buttonRandomize">Nytt Slumptal</string>
     <string name="title_activity_background_color">Bakgrundsfärger</string>
-    <string name="colorRed">Rött</string>
-    <string name="colorGreen">Grönt</string>
-    <string name="colorBlue">Blått</string>
     <string name="title_activity_shared_menu">SharedMenuActivity</string>
     <string name="activity_contact">Kontaktformulär</string>
     <string name="activity_background">Bakgrundsfärger</string>
-    <string name="toast_missing_name">Skriv ett namn för kontakten</string>
-    <string name="toast_invalid_email">Skriv en giltig e-postadress</string>
+    <string name="error_missing_name">Skriv ett namn för kontakten</string>
+    <string name="error_invalid_email">Skriv en giltig e-postadress</string>
+    <string name="hue">Färgval</string>
+    <string name="saturation">Mättnad</string>
+    <string name="value">Ljus</string>
+    <string name="alpha">Genomskinlighet</string>
 
 </resources>

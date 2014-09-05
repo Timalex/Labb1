@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-// Den här aktiviteten innehåller en gemensam meny som kan delas vidare till andra aktiviteter genom arv
+// Den här aktiviteten innehåller en gemensam meny som kan delas vidare till de andra aktiviteterna genom arv
 
 public class SharedMenuActivity extends Activity {
 

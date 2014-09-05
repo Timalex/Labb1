@@ -25,7 +25,7 @@ public class RandomNumberActivity extends SharedMenuActivity {
         randomButton = (Button) findViewById(R.id.buttonRandom);
         randomResultTv = (TextView) findViewById(R.id.textViewResult);
 
-        // Skapar en lyssnare och använder den på slumpknapper
+        // Skapar en lyssnare på slumpknappen som visar det formaterade talet i en textvy
         randomButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
