@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import static android.util.Patterns.EMAIL_ADDRESS;
+
 
 public class AddFriendsActivity extends SharedMenuActivity {
 
@@ -45,25 +47,15 @@ public class AddFriendsActivity extends SharedMenuActivity {
         //Trimma bort whitespace och kontrollera sedan om text saknas
         if (name.trim().equals(""))
         {
-            showCenterToast(getString(R.string.toast_missing_name));
-            nameTv.requestFocus();
+            nameTv.setError(getString(R.string.toast_missing_name));
         } // Meddela om en adress är inmatad och inte matchar mot ett e-postmönster
-        else if (!(email.trim().equals("")) && !(Patterns.EMAIL_ADDRESS.matcher(email).matches()))
+        else if (!(email.trim().isEmpty()) && !(EMAIL_ADDRESS.matcher(email).matches()))
         {
-            showCenterToast(getString(R.string.toast_invalid_email));
-            emailTv.requestFocus();
+            emailTv.setError(getString(R.string.toast_invalid_email));
         }
         else { insertContact(name,email); }
     }
 
-    private void showCenterToast(String message)
-    {
-        // Skapa ett diskret meddelande att kunna visa en kort stund i aktiviteten
-        Toast forgotName = Toast.makeText(this,message, Toast.LENGTH_SHORT);
-        // Meddelandet ska synas i mitten av skärmen, det syntes dåligt över det virtuella tangentbordet
-        forgotName.setGravity(Gravity.CENTER,0,0);
-        forgotName.show();
-    }
 
     public void insertContact(String name, String email)
     {
